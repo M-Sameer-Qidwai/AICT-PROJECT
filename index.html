@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainFlex – Daily Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-brain"></i>
+            <span>BrainFlex</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="leaderboard.html"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="hero-section">
+            <h1>Welcome to BrainFlex</h1>
+            <p>Challenge your mind with daily brain teasers!</p>
+        </div>
+
+        <div class="challenge-container">
+            <h2>Challenge of the Day</h2>
+            <div class="challenge-box" id="challenge">Loading...</div>
+
+            <div class="timer-section">
+                <i class="fas fa-clock"></i>
+                <h3>Time Remaining: <span id="timer">60</span> seconds</h3>
+            </div>
+
+            <form id="answerForm">
+                <input type="text" id="userAnswer" placeholder="Your answer..." required>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Submit Answer</button>
+            </form>
+
+            <p id="feedback"></p>
+            <p id="correctAnswer" class="hidden">Answer: </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 BrainFlex. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
